@@ -3,83 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verificación de Cédula Profesional - Baja California</title>
+    <title>Cédula Profesional - Enfermero Psiquiátrico</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f9f9f9;
+            font-family: 'Georgia', serif;
+            background-color: #f8f9fa; /* Light background for a clean look */
+            color: #2c3e50; /* Dark text for elegance */
             margin: 0;
             padding: 0;
+            line-height: 1.6;
         }
+
         header {
-            background-color: #0073b7;
-            color: white;
-            padding: 10px;
+            background-color: #800020; /* Maroon color inspired by the Baja California logo */
+            color: #fff;
+            padding: 20px 0;
             text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            border-bottom: 5px solid #4B0082; /* Dark purple border to match the color scheme */
         }
-        .container {
-            margin: 20px auto;
+
+        .subheader {
+            color: #fff;
+            font-size: 18px;
+            font-weight: normal;
+        }
+
+        .logo-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .logo-container img {
+            max-width: 220px;
+            margin: 0 20px;
+        }
+
+        .certificate-section {
+            text-align: center;
+            margin: 40px auto;
             padding: 20px;
-            width: 80%;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
-        input {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+
+        .certificate-section h2 {
+            font-size: 28px;
+            margin-bottom: 10px;
+            color: #800020; /* Maroon color for headings */
         }
-        button {
-            padding: 10px 20px;
-            background-color: #0073b7;
+
+        .certificate-section p {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            background-color: #800020;
             color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+            padding: 10px 0;
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
         }
-        button:hover {
-            background-color: #005fa3;
-        }
+
     </style>
 </head>
 <body>
 
-<header>
-    <h1>Verificación de Cédula Profesional - Baja California</h1>
-</header>
+    <header>
+        Gobierno del Estado de Baja California
+        <div class="subheader">Cédula Profesional A263588TJBC - Enfermero Psiquiátrico</div>
+    </header>
 
-<div class="container">
-    <form id="verification-form">
-        <label for="cedula">Ingrese el Número de Cédula:</label>
-        <input type="text" id="cedula" placeholder="Número de Cédula" required>
-        <button type="button" onclick="verifyCedula()">Verificar</button>
-    </form>
+    <div class="logo-container">
+        <img src="IMG_0383.png" alt="Baja California Logo">
+        <img src="IMG_0744.png" alt="COFEPRIS Logo">
+    </div>
 
-    <div id="result"></div>
-</div>
+    <div class="certificate-section">
+        <h2>Enfermero Psiquiátrico Certificado</h2>
+        <p>Yo, Tyler Robert López Pérez, con la cédula profesional A263588TJBC, certifico que he cumplido con los requisitos necesarios establecidos por el estado de Baja California y México para ejercer como Enfermero Psiquiátrico.</p>
+        
+        <p>He completado mi formación en la Universidad Autónoma de Baja California (UABC) en Tijuana, donde aprobé los exámenes internacionales de enfermería, lo que me faculta para ejercer mi profesión en todo el país.</p>
+        
+        <p>Mi compromiso con la salud mental es avalado por la Secretaría de Salud y la Comisión Federal para la Protección contra Riesgos Sanitarios (COFEPRIS).</p>
 
-<script>
-    function verifyCedula() {
-        const cedula = document.getElementById('cedula').value;
+        <p><strong>Estado:</strong> Baja California<br>
+        <strong>Ciudad:</strong> Tijuana<br>
+        <strong>País:</strong> México</p>
+    </div>
 
-        // Replace this logic with actual server-side validation or database query.
-        if (cedula === 'A78625') {
-            document.getElementById('result').innerHTML = `
-                <h2>Información de la Cédula</h2>
-                <p><strong>Nombre:</strong> Tyler Robert Lopez Perez</p>
-                <p><strong>Título Profesional:</strong> Enfermero Psiquiátrico</p>
-                <p><strong>Número de Cédula:</strong> A78625</p>
-                <p><strong>Autoridad Expedidora:</strong> Estado de Baja California</p>
-                <p><strong>Estado:</strong> Activo</p>
-            `;
-        } else {
-            document.getElementById('result').innerHTML = '<p>Número de cédula no encontrado.</p>';
-        }
-    }
-</script>
+    <footer class="footer">
+        Secretaría de Salud | Gobierno del Estado de Baja California | COFEPRIS
+    </footer>
 
 </body>
 </html>
