@@ -22,6 +22,7 @@
             font-size: 32px;
             font-weight: bold;
             border-bottom: 5px solid #4B0082; /* Dark purple border to match the color scheme */
+            position: relative;
         }
 
         .subheader {
@@ -30,14 +31,22 @@
             font-weight: normal;
         }
 
+        .logo-baja {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 60px;
+        }
+
         .logo-container {
             text-align: center;
             margin: 40px 0;
         }
 
-        .logo-container img {
+        .logo-cofepris {
+            display: block;
             max-width: 220px;
-            margin: 0 20px;
+            margin: 0 auto;
         }
 
         .certificate-section {
@@ -61,6 +70,17 @@
             margin-bottom: 15px;
         }
 
+        .ordinances-section {
+            margin-top: 30px;
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        .ordinances-section h3 {
+            font-size: 22px;
+            color: #4B0082; /* Dark purple for subheadings */
+        }
+
         .footer {
             background-color: #800020;
             color: white;
@@ -75,29 +95,33 @@
 <body>
 
     <header>
+        <img class="logo-baja" src="IMG_0850.png" alt="Baja California Logo">
         Gobierno del Estado de Baja California
         <div class="subheader">Cédula Profesional A263588TJBC - Enfermero Psiquiátrico</div>
     </header>
-
-    <div class="logo-container">
-        <img src="IMG_0850.png" alt="Baja California Logo">
-        <img src="IMG_0851.png" alt="COFEPRIS Logo">
-    </div>
 
     <div class="certificate-section">
         <h2>Enfermero Psiquiátrico Certificado</h2>
         <p>Yo, Tyler Robert López Pérez, con la cédula profesional A263588TJBC, certifico que he cumplido con los requisitos necesarios establecidos por el estado de Baja California y México para ejercer como Enfermero Psiquiátrico.</p>
         
-        <p>He completado mi formación en la Universidad Autónoma de Baja California (UABC) en Tijuana, donde aprobé los exámenes internacionales de enfermería, lo que me faculta para ejercer mi profesión en todo el país.</p>
+        <p>He completado mi formación en la Universidad Autónoma de Baja California (UABC) en Tijuana, donde aprobé los exámenes internacionales de enfermería el día <strong>14 de agosto de 2024</strong>, lo que me faculta para ejercer mi profesión en todo el país.</p>
         
         <p>Mi compromiso con la salud mental es avalado por la Secretaría de Salud y la Comisión Federal para la Protección contra Riesgos Sanitarios (COFEPRIS).</p>
 
         <p><strong>Estado:</strong> Baja California<br>
         <strong>Ciudad:</strong> Tijuana<br>
         <strong>País:</strong> México</p>
+
+        <!-- City and State Ordinances -->
+        <div class="ordinances-section">
+            <h3>Ordenanzas Estatales y Municipales</h3>
+            <p><strong>Ordenanza Estatal de Salud Mental:</strong> Ley Estatal de Salud Mental de Baja California (Art. 23, Sección II)<br>
+            <strong>Ordenanza Municipal:</strong> Reglamento de Salud Pública del Municipio de Tijuana (Capítulo III, Art. 12)</p>
+        </div>
     </div>
 
     <footer class="footer">
+        <img class="logo-cofepris" src="IMG_0851.png" alt="COFEPRIS Logo">
         Secretaría de Salud | Gobierno del Estado de Baja California | COFEPRIS
     </footer>
 
