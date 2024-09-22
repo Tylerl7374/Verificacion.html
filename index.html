@@ -8,79 +8,124 @@
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f9f9f9;
-            color: #333;
             margin: 0;
             padding: 0;
+        }
+
+        /* Add white background sections for the logos */
+        .logo-section {
+            background-color: white;
+            padding: 20px 0;
             text-align: center;
         }
+
+        .logo-section img {
+            height: 100px;
+            margin: 0 20px;
+            vertical-align: middle;
+        }
+
         header {
-            background-color: #7A0019; /* Dark red matching Baja California colors */
-            padding: 10px 0;
+            background-color: #800000; /* Baja California red */
             color: white;
-            position: relative;
-        }
-        header img {
-            max-width: 100px;
-            position: absolute;
-            left: 20px;
-            top: 10px;
-            filter: none; /* Ensures visibility of logo */
-        }
-        header h1 {
-            font-size: 2em;
-            margin: 0;
-            color: #fff;
-        }
-        .content {
-            padding: 20px;
-        }
-        h2 {
-            color: #7A0019;
-            font-size: 1.8em;
-        }
-        .footer-logo {
-            background-color: #7A0019; /* Dark red matching Baja California colors */
-            color: white;
-            padding: 10px;
+            padding: 20px 0;
             text-align: center;
-            position: relative;
+            font-size: 24px;
         }
-        .footer-logo img {
-            max-width: 100px;
-            position: absolute;
-            right: 20px;
-            bottom: 10px;
-            filter: none; /* Ensures visibility of COFEPRIS logo */
+
+        h1 {
+            color: #800000; /* Baja California red */
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .ordinance {
+            color: #800000;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer img {
+            height: 100px;
+            margin: 0 20px;
+            vertical-align: middle;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <img src="IMG_0851.png" alt="Gobierno del Estado de Baja California Logo"> <!-- Baja California Gobierno logo -->
-    <h1>Gobierno del Estado de Baja California</h1>
-</header>
+    <!-- Top logo section -->
+    <div class="logo-section">
+        <img src="51.png" alt="Baja California Logo">
+        <img src="50.png" alt="COFEPRIS Logo">
+    </div>
 
-<div class="content">
-    <h2>Certificado de Enfermero Psiquiátrico</h2>
-    <p>
-        A través del estado de Baja California, se certifica que <strong>Tyler Robert López Pérez</strong> ha completado satisfactoriamente 
-        los exámenes y requisitos necesarios para ejercer como <strong>Enfermero Psiquiátrico Certificado</strong> con la cédula profesional 
-        <strong>A263588TJBC</strong>.
-    </p>
-    <p>
-        La formación profesional fue completada en la <strong>Universidad Autónoma de Baja California (UABC)</strong> en Tijuana, 
-        donde se aprobaron los exámenes internacionales el <strong>14 de agosto de 2024</strong>.
-    </p>
-</div>
+    <header>
+        Gobierno del Estado de Baja California
+    </header>
 
-<div class="footer-logo">
-    <img src="IMG_0850.png" alt="COFEPRIS Logo"> <!-- COFEPRIS logo -->
-    <p>
-        Este certificado es avalado por la <strong>Secretaría de Salud</strong> y la <strong>Comisión Federal para la Protección contra Riesgos Sanitarios (COFEPRIS)</strong>, 
-        conforme a las ordenanzas estatales y municipales vigentes.
-    </p>
-</div>
+    <h1>Certificado de Enfermero Psiquiátrico</h1>
+
+    <div class="container">
+        <p>
+            La Secretaría de Salud y la Comisión Federal para la Protección contra Riesgos Sanitarios (COFEPRIS), 
+            en cumplimiento con las leyes y regulaciones del estado de Baja California y México, otorgan el presente 
+            certificado a:
+        </p>
+
+        <p>
+            <strong>Tyler Robert López Pérez</strong><br>
+            Cédula profesional: A263588TJBC
+        </p>
+
+        <p>
+            En reconocimiento por haber cumplido con todos los requisitos académicos y profesionales establecidos 
+            por el estado de Baja California para ejercer como Enfermero Psiquiátrico.
+        </p>
+
+        <p>
+            El/la mencionado(a) ha completado su formación en la Universidad Autónoma de Baja California (UABC) en 
+            Tijuana, aprobando los exámenes internacionales de enfermería el 14 de agosto de 2024, habilitándolo(a) 
+            para ejercer su profesión en todo el país.
+        </p>
+
+        <p>
+            El presente certificado es una muestra del compromiso de Tyler Robert López Pérez con la salud mental, 
+            avalado por la Secretaría de Salud y COFEPRIS.
+        </p>
+
+        <p>
+            <strong>Estado:</strong> Baja California<br>
+            <strong>Ciudad:</strong> Tijuana<br>
+            <strong>País:</strong> México
+        </p>
+
+        <div class="ordinance">
+            <p>Ordenanzas Estatales y Municipales</p>
+            <p><strong>Ordenanza Estatal de Salud Mental:</strong> Ley Estatal de Salud Mental de Baja California (Art. 23, Sección II)</p>
+            <p><strong>Ordenanza Municipal:</strong> Reglamento de Salud Pública del Municipio de Tijuana (Capítulo III, Art. 12)</p>
+        </div>
+    </div>
+
+    <!-- Bottom logo section -->
+    <footer>
+        <img src="IMG_0851.png" alt="Baja California Logo">
+        <img src="IMG_0850.png" alt="COFEPRIS Logo">
+    </footer>
 
 </body>
 </html>
