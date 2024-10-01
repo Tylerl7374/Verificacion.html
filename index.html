@@ -78,6 +78,15 @@
         .footer-strip img {
             height: 100px;
         }
+
+        /* Hide the top Google Translate bar */
+        .goog-te-banner-frame.skiptranslate {
+            display: none !important;
+        }
+
+        body {
+            top: 0px !important;
+        }
     </style>
 </head>
 <body>
@@ -85,22 +94,22 @@
     <header>
         <div>Gobierno del Estado de Baja California</div>
     </header>
-    
-<!-- Google Translate Widget -->
-<div id="google_translate_element"></div>
-
-<script type="text/javascript">
-function googleTranslateElementInit() {
-    new google.translate.TranslateElement({pageLanguage: 'es'}, 'google_translate_element');
-}
-</script>
-
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>    
 
     <!-- Logos at the top in a white section -->
     <div class="logo-section">
         <img src="IMG_0851.png" alt="Gobierno del Estado de Baja California">
     </div>
+
+    <!-- Google Translate Widget -->
+    <div id="google_translate_element"></div>
+
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'es'}, 'google_translate_element');
+    }
+    </script>
+
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <!-- Main container for the certification information -->
     <div class="container">
@@ -148,9 +157,6 @@ function googleTranslateElementInit() {
         <p class="footer-text">Secretaría de Salud | Gobierno del Estado de Baja California | COFEPRIS</p>
         <img src="IMG_0850.png" alt="COFEPRIS">
     </div>
-
-    <!-- Translate to English link -->
-    <p><a href="https://translate.google.com/translate?hl=en&sl=es&u=https%3A%2F%2Fwww.saludbccedula.work.gd" target="_blank">Translate this website to English</a></p>
 
 </body>
 </html>
