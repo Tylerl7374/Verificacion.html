@@ -5,93 +5,141 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro Nacional de Profesionistas</title>
     <style>
-        /* General CSS styling */
+        /* General Page Styling */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f5f5f5;
         }
-        /* Header styling */
+
+        /* Top Header Styling */
         .top-header {
             background-color: #5b1f32; /* Dark maroon */
-            padding: 10px;
+            padding: 10px 20px;
             display: flex;
             align-items: center;
+            justify-content: space-between;
             color: white;
         }
         .top-header img {
             height: 40px;
-            margin-right: 10px; /* Adds space between logo and menu */
-        }
-        .menu {
-            display: flex;
-            gap: 20px;
         }
         .menu a {
             color: white;
             text-decoration: none;
+            margin: 0 15px;
             font-size: 16px;
         }
+
+        /* Sub Header Styling */
         .sub-header {
             background-color: #a98b2f; /* Gold color */
             padding: 10px;
-            text-align: center;
         }
-        .sub-header .nav-links {
+        .nav-links {
             display: flex;
             justify-content: center;
             gap: 20px;
         }
-        .sub-header .nav-links a {
+        .nav-links a {
             color: white;
             text-decoration: none;
             font-size: 16px;
         }
-        /* Section styling */
-        section {
-            margin: 20px;
-            padding: 15px;
+
+        /* Main Content Styling */
+        main {
+            padding: 20px;
+        }
+        h1 {
+            font-size: 28px;
+            color: #5b1f32;
+            text-align: center;
+        }
+        h2 {
+            font-size: 24px;
+            color: #5b1f32;
+        }
+        p {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.5;
+        }
+
+        /* Tab and Form Styling */
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        .tabs button {
+            background-color: #f5f5f5;
+            border: 1px solid #ccc;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .tabs button.active {
+            background-color: #5b1f32;
+            color: white;
+            border: none;
+        }
+        .form-container {
             background-color: white;
+            padding: 20px;
             border: 1px solid #ccc;
             border-radius: 5px;
         }
-        #detalle-registro h2, #glosario h3 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #8b5e3c;
-        }
-        #detalle-registro p, #glosario li {
-            font-size: 18px;
-            margin: 5px 0;
-        }
-        strong {
+        .form-container label {
             font-weight: bold;
+            margin-top: 10px;
+            display: block;
         }
-        a {
-            color: blue;
-            text-decoration: underline;
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
             cursor: pointer;
+            padding: 10px 20px;
         }
-        hr {
-            border: 0;
-            border-top: 2px solid #8b5e3c;
-            margin: 20px 0;
+
+        /* Footer Styling */
+        footer {
+            background-color: #5b1f32;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
         }
-        ul {
-            list-style-type: none;
-            padding: 0;
+        .footer-section {
+            width: 30%;
         }
-        ul li {
-            margin-bottom: 5px;
+        .footer-section h3 {
+            margin-bottom: 10px;
+        }
+        .footer-section p,
+        .footer-section a {
+            font-size: 14px;
+            color: white;
+            text-decoration: none;
         }
     </style>
 </head>
 <body>
-    <!-- Static header with logo -->
+
+    <!-- Top Header -->
     <div class="top-header">
         <div>
-            <img src="IMG_1350.jpeg" alt="Logo">
+            <img src="IMG_1350.jpeg" alt="Gobierno de México Logo">
         </div>
         <div class="menu">
             <a href="#">Trámites</a>
@@ -99,6 +147,8 @@
             <a href="#">🔍</a>
         </div>
     </div>
+
+    <!-- Sub Header -->
     <div class="sub-header">
         <div class="nav-links">
             <a href="#">Inicio</a>
@@ -109,35 +159,55 @@
         </div>
     </div>
 
-    <!-- Main content -->
-    <section>
-        <p>Este apartado tiene como propósito ampliar los criterios de búsqueda de profesionistas que registran sus títulos y cuentan con cédula profesional con efectos de patente...</p>
-    </section>
+    <!-- Main Content -->
+    <main>
+        <h1>Registro Nacional de Profesionistas</h1>
+        <h2>Consulta de cédulas profesionales</h2>
+        <p>Este apartado tiene como propósito ampliar los criterios de búsqueda de profesionistas que registran sus títulos y cuentan con cédula profesional con efectos de patente; esto delimita la responsabilidad del Registro Nacional de Profesionistas, al definirla como la única instancia válida para hacer uso de esta información.</p>
+        <p>La información publicada en este sitio, de acuerdo a los criterios ordenados por el Instituto Nacional de Transparencia Acceso a la Información y Protección de Datos Personales (INAI), es de carácter público y constantemente se actualiza; esto determina que la Secretaría de Educación Pública (SEP) se deslinde y no sea responsable del uso, adecuaciones y modalidades de la información que pudieran aparecer en otros sitios web.</p>
 
-    <hr>
+        <!-- Tabs -->
+        <div class="tabs">
+            <button class="active">Búsqueda</button>
+            <button>Resultados</button>
+            <button>Detalle</button>
+        </div>
 
-    <section id="detalle-registro">
-        <h2>Detalle del registro</h2>
-        <p><strong>Número de Cédula:</strong> 13746672</p>
-        <p><strong>Nombre:</strong> ROBERTO LOPEZ PEREZ</p>
-        <p><strong>Género:</strong> HOMBRE</p>
-        <p><strong>Profesión:</strong> DOCTORADO EN DERECHO PÚBLICO</p>
-        <p><strong>Año de expedición:</strong> 2023</p>
-        <p><strong>Institución:</strong> UNIVERSIDAD VERACRUZANA</p>
-        <p><strong>Tipo:</strong> C1</p>
-        <p><a href="#">Solicitud de corrección de datos</a></p>
-    </section>
+        <!-- Form -->
+        <div class="form-container">
+            <h2>Datos de consulta</h2>
+            <label for="nombre">Nombre(s)*:</label>
+            <input type="text" id="nombre" placeholder="Ingresar nombre(s)">
+            <label for="primer-apellido">Primer apellido*:</label>
+            <input type="text" id="primer-apellido" placeholder="Primer apellido">
+            <label for="segundo-apellido">Segundo apellido:</label>
+            <input type="text" id="segundo-apellido" placeholder="Segundo apellido">
+            <p>(*) Campos obligatorios</p>
+            <input type="submit" value="Consultar">
+        </div>
+    </main>
 
-    <hr>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-section">
+            <h3>Enlaces</h3>
+            <p><a href="#">Participa</a></p>
+            <p><a href="#">Publicaciones Oficiales</a></p>
+            <p><a href="#">Marco Jurídico</a></p>
+            <p><a href="#">Plataforma Nacional de Transparencia</a></p>
+            <p><a href="#">Alerta</a></p>
+            <p><a href="#">Denuncia</a></p>
+        </div>
+        <div class="footer-section">
+            <h3>¿Qué es gob.mx?</h3>
+            <p>Es el portal único de trámites, información y participación ciudadana. <a href="#">Leer más</a></p>
+        </div>
+        <div class="footer-section">
+            <h3>Denuncia contra servidores públicos</h3>
+            <p>Síguenos en:</p>
+            <p><a href="#">Facebook</a> | <a href="#">Twitter</a></p>
+        </div>
+    </footer>
 
-    <section id="glosario">
-        <h3>Glosario de Nomenclaturas</h3>
-        <ul>
-            <li><strong>AE:</strong> Autorización de Especialidad</li>
-            <li><strong>AEIE:</strong> Autorización de Especialidad por Institución Educativa</li>
-            <li><strong>AECEM:</strong> Autorización de Especialidad por Consejo de Especialidades Médicas</li>
-            <li><strong>AESSA:</strong> Autorización de Especialidad por Sector Salud</li>
-        </ul>
-    </section>
 </body>
 </html>
