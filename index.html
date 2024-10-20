@@ -112,25 +112,16 @@
             padding: 10px 20px;
         }
 
-        /* Footer Styling */
-        footer {
-            background-color: #5b1f32;
-            color: white;
+        /* Results Container */
+        .results-container {
+            background-color: white;
             padding: 20px;
-            display: flex;
-            justify-content: space-around;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 20px;
         }
-        .footer-section {
-            width: 30%;
-        }
-        .footer-section h3 {
-            margin-bottom: 10px;
-        }
-        .footer-section p,
-        .footer-section a {
-            font-size: 14px;
-            color: white;
-            text-decoration: none;
+        .results-container h2 {
+            color: #5b1f32;
         }
     </style>
 </head>
@@ -163,8 +154,7 @@
     <main>
         <h1>Registro Nacional de Profesionistas</h1>
         <h2>Consulta de cédulas profesionales</h2>
-        <p>Este apartado tiene como propósito ampliar los criterios de búsqueda de profesionistas que registran sus títulos y cuentan con cédula profesional con efectos de patente; esto delimita la responsabilidad del Registro Nacional de Profesionistas, al definirla como la única instancia válida para hacer uso de esta información.</p>
-        <p>La información publicada en este sitio, de acuerdo a los criterios ordenados por el Instituto Nacional de Transparencia Acceso a la Información y Protección de Datos Personales (INAI), es de carácter público y constantemente se actualiza; esto determina que la Secretaría de Educación Pública (SEP) se deslinde y no sea responsable del uso, adecuaciones y modalidades de la información que pudieran aparecer en otros sitios web.</p>
+        <p>Este apartado tiene como propósito ampliar los criterios de búsqueda de profesionistas que registran sus títulos y cuentan con cédula profesional con efectos de patente...</p>
 
         <!-- Tabs -->
         <div class="tabs">
@@ -183,31 +173,39 @@
             <label for="segundo-apellido">Segundo apellido:</label>
             <input type="text" id="segundo-apellido" placeholder="Segundo apellido">
             <p>(*) Campos obligatorios</p>
-            <input type="submit" value="Consultar">
+            <input type="submit" value="Consultar" onclick="searchCedula()">
+        </div>
+
+        <!-- Results Container -->
+        <div class="results-container" id="results" style="display: none;">
+            <h2>Detalle del registro</h2>
+            <p><strong>Número de Cédula:</strong> <span id="cedula-number">12171365</span></p>
+            <p><strong>Nombre:</strong> <span id="name">ANGEL GUERRERO CERVANTES</span></p>
+            <p><strong>Género:</strong> <span id="gender">HOMBRE</span></p>
+            <p><strong>Profesión:</strong> <span id="profession">ESPECIALIDAD EN MEDICINA FAMILIAR</span></p>
+            <p><strong>Año de expedición:</strong> <span id="year">2020</span></p>
+            <p><strong>Institución:</strong> <span id="institution">UNIVERSIDAD JUÁREZ DEL ESTADO DE DURANGO</span></p>
+            <p><strong>Tipo:</strong> <span id="type">C1</span></p>
+            <p><a href="#">Solicitud de corrección de datos</a></p>
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-section">
-            <h3>Enlaces</h3>
-            <p><a href="#">Participa</a></p>
-            <p><a href="#">Publicaciones Oficiales</a></p>
-            <p><a href="#">Marco Jurídico</a></p>
-            <p><a href="#">Plataforma Nacional de Transparencia</a></p>
-            <p><a href="#">Alerta</a></p>
-            <p><a href="#">Denuncia</a></p>
-        </div>
-        <div class="footer-section">
-            <h3>¿Qué es gob.mx?</h3>
-            <p>Es el portal único de trámites, información y participación ciudadana. <a href="#">Leer más</a></p>
-        </div>
-        <div class="footer-section">
-            <h3>Denuncia contra servidores públicos</h3>
-            <p>Síguenos en:</p>
-            <p><a href="#">Facebook</a> | <a href="#">Twitter</a></p>
-        </div>
-    </footer>
+    <!-- JavaScript for Dynamic Search -->
+    <script>
+        function searchCedula() {
+            // Example function to simulate data display
+            var nombre = document.getElementById('nombre').value;
+            var primerApellido = document.getElementById('primer-apellido').value;
+            var segundoApellido = document.getElementById('segundo-apellido').value;
+
+            // Simple condition to display pre-defined data (for demonstration)
+            if (nombre.toLowerCase() === "angel" && primerApellido.toLowerCase() === "guerrero") {
+                document.getElementById('results').style.display = 'block';
+            } else {
+                alert('No se encontraron resultados para la búsqueda.');
+            }
+        }
+    </script>
 
 </body>
 </html>
