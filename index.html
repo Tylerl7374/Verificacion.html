@@ -85,34 +85,6 @@
             color: white;
             border: none;
         }
-        .form-container {
-            background-color: white;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .form-container label {
-            font-weight: bold;
-            margin-top: 10px;
-            display: block;
-        }
-        .form-container input {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .form-container input[type="submit"] {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            cursor: pointer;
-            padding: 10px 20px;
-        }
-
-        /* Results Container */
         .results-container {
             background-color: white;
             padding: 20px;
@@ -122,6 +94,15 @@
         }
         .results-container h2 {
             color: #5b1f32;
+        }
+
+        /* Glosario Styling */
+        .glosario {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 20px;
         }
     </style>
 </head>
@@ -154,7 +135,8 @@
     <main>
         <h1>Registro Nacional de Profesionistas</h1>
         <h2>Consulta de cédulas profesionales</h2>
-        <p>Este apartado tiene como propósito ampliar los criterios de búsqueda de profesionistas que registran sus títulos y cuentan con cédula profesional con efectos de patente...</p>
+        <p>Este apartado tiene como propósito ampliar los criterios de búsqueda de profesionistas que registran sus títulos y cuentan con cédula profesional con efectos de patente; esto delimita la responsabilidad del Registro Nacional de Profesionistas, al definirla como la única instancia válida para hacer uso de esta información.</p>
+        <p>La información publicada en este sitio, de acuerdo a los criterios ordenados por el Instituto Nacional de Transparencia Acceso a la Información y Protección de Datos Personales (INAI), es de carácter público y constantemente se actualiza; esto determina que la Secretaría de Educación Pública (SEP) se deslinde y no sea responsable del uso, adecuaciones y modalidades de la información que pudieran aparecer en otros sitios web.</p>
 
         <!-- Tabs -->
         <div class="tabs">
@@ -163,49 +145,28 @@
             <button>Detalle</button>
         </div>
 
-        <!-- Form -->
-        <div class="form-container">
-            <h2>Datos de consulta</h2>
-            <label for="nombre">Nombre(s)*:</label>
-            <input type="text" id="nombre" placeholder="Ingresar nombre(s)">
-            <label for="primer-apellido">Primer apellido*:</label>
-            <input type="text" id="primer-apellido" placeholder="Primer apellido">
-            <label for="segundo-apellido">Segundo apellido:</label>
-            <input type="text" id="segundo-apellido" placeholder="Segundo apellido">
-            <p>(*) Campos obligatorios</p>
-            <input type="submit" value="Consultar" onclick="searchCedula()">
-        </div>
-
         <!-- Results Container -->
-        <div class="results-container" id="results" style="display: none;">
+        <div class="results-container">
             <h2>Detalle del registro</h2>
-            <p><strong>Número de Cédula:</strong> <span id="cedula-number">12171365</span></p>
-            <p><strong>Nombre:</strong> <span id="name">ANGEL GUERRERO CERVANTES</span></p>
-            <p><strong>Género:</strong> <span id="gender">HOMBRE</span></p>
-            <p><strong>Profesión:</strong> <span id="profession">ESPECIALIDAD EN MEDICINA FAMILIAR</span></p>
-            <p><strong>Año de expedición:</strong> <span id="year">2020</span></p>
-            <p><strong>Institución:</strong> <span id="institution">UNIVERSIDAD JUÁREZ DEL ESTADO DE DURANGO</span></p>
-            <p><strong>Tipo:</strong> <span id="type">C1</span></p>
+            <p><strong>Número de Cédula:</strong> 12171365</p>
+            <p><strong>Nombre:</strong> TYLER ROBERT LÓPEZ PÉREZ</p>
+            <p><strong>Género:</strong> HOMBRE</p>
+            <p><strong>Profesión:</strong> ESPECIALIDAD EN PSIQUIATRÍA Y MEDICINA PALIATIVA</p>
+            <p><strong>Año de expedición:</strong> 2020</p>
+            <p><strong>Institución:</strong> UNIVERSIDAD AUTÓNOMA DE BAJA CALIFORNIA (UABC)</p>
+            <p><strong>Tipo:</strong> C1</p>
             <p><a href="#">Solicitud de corrección de datos</a></p>
         </div>
+
+        <!-- Glosario -->
+        <div class="glosario">
+            <h2>* Glosario de Nomenclaturas</h2>
+            <p><strong>AE:</strong> Autorización de Especialidad</p>
+            <p><strong>AEIE:</strong> Autorización de Especialidad por Institución Educativa</p>
+            <p><strong>AECEM:</strong> Autorización de Especialidad por Consejo de Especialidades Médicas</p>
+            <p><strong>AESSA:</strong> Autorización de Especialidad por Sector Salud</p>
+        </div>
     </main>
-
-    <!-- JavaScript for Dynamic Search -->
-    <script>
-        function searchCedula() {
-            // Example function to simulate data display
-            var nombre = document.getElementById('nombre').value;
-            var primerApellido = document.getElementById('primer-apellido').value;
-            var segundoApellido = document.getElementById('segundo-apellido').value;
-
-            // Simple condition to display pre-defined data (for demonstration)
-            if (nombre.toLowerCase() === "angel" && primerApellido.toLowerCase() === "guerrero") {
-                document.getElementById('results').style.display = 'block';
-            } else {
-                alert('No se encontraron resultados para la búsqueda.');
-            }
-        }
-    </script>
 
 </body>
 </html>
