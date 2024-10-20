@@ -5,28 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro Nacional de Profesionistas</title>
     <style>
-        /* CSS styling */
+        /* General CSS styling */
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
             background-color: #f5f5f5;
         }
-        header {
-            text-align: center;
+        /* Header styling */
+        .top-header {
+            background-color: #5b1f32; /* Dark maroon */
             padding: 10px;
-            background-color: #8b5e3c;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             color: white;
         }
-        header h1 {
-            font-size: 28px;
-            margin-bottom: 5px;
+        .top-header img {
+            height: 40px;
         }
-        header p {
-            font-size: 18px;
-            margin: 0;
+        .top-header .menu {
+            display: flex;
+            gap: 20px;
         }
+        .top-header .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .sub-header {
+            background-color: #a98b2f; /* Gold color */
+            padding: 10px;
+            text-align: center;
+        }
+        .sub-header .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .sub-header .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        /* Section styling */
         section {
-            margin: 20px 0;
+            margin: 20px;
             padding: 15px;
             background-color: white;
             border: 1px solid #ccc;
@@ -64,11 +88,28 @@
     </style>
 </head>
 <body>
-    <header>
-        <h1>Registro Nacional de Profesionistas</h1>
-        <p>Consulta de cédulas profesionales</p>
-    </header>
+    <!-- Static header -->
+    <div class="top-header">
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Logo_Gobierno_de_Mexico.png" alt="Gobierno de México Logo">
+        </div>
+        <div class="menu">
+            <a href="#">Trámites</a>
+            <a href="#">Gobierno</a>
+            <a href="#">🔍</a>
+        </div>
+    </div>
+    <div class="sub-header">
+        <div class="nav-links">
+            <a href="#">Inicio</a>
+            <a href="#">Búsqueda</a>
+            <a href="#">Preguntas frecuentes</a>
+            <a href="#">Video de ayuda</a>
+            <a href="#">Contacto</a>
+        </div>
+    </div>
 
+    <!-- Main content -->
     <section>
         <p>Este apartado tiene como propósito ampliar los criterios de búsqueda de profesionistas que registran sus títulos y cuentan con cédula profesional con efectos de patente; esto delimita la responsabilidad del Registro Nacional de Profesionistas, al definirla como la única instancia válida para hacer uso de esta información.</p>
         <p>La información publicada en este sitio, de acuerdo a los criterios ordenados por el Instituto Nacional de Transparencia Acceso a la Información y Protección de Datos Personales (INAI), es de carácter público y constantemente se actualiza; esto determina que la Secretaría de Educación Pública (SEP) se deslinde y no sea responsable del uso, adecuaciones y modalidades de la información que pudieran aparecer en otros sitios web.</p>
