@@ -1,172 +1,53 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro Nacional de Profesionistas</title>
-    <style>
-        /* General Page Styling */
+Original file line number	Diff line number	Diff line change
+@@ -78,30 +78,39 @@
+        .footer-strip img {
+            height: 100px;
+        }
+        /* Hide the top Google Translate bar */
+        .goog-te-banner-frame.skiptranslate {
+            display: none !important;
+        }
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
-
-        /* Top Header Styling */
-        .top-header {
-            background-color: #5b1f32; /* Dark maroon */
-            padding: 10px 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            color: white;
-        }
-        .top-header img {
-            height: 40px;
-        }
-        .menu a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 16px;
-        }
-
-        /* Sub Header Styling */
-        .sub-header {
-            background-color: #a98b2f; /* Gold color */
-            padding: 10px;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-        }
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-        }
-
-        /* Main Content Styling */
-        main {
-            padding: 20px;
-        }
-        h1 {
-            font-size: 28px;
-            color: #5b1f32;
-            text-align: center;
-        }
-        h2 {
-            font-size: 24px;
-            color: #5b1f32;
-        }
-        p {
-            font-size: 16px;
-            color: #333;
-            line-height: 1.5;
-        }
-
-        /* Tab and Form Styling */
-        .tabs {
-            display: flex;
-            gap: 10px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-        }
-        .tabs button {
-            background-color: #f5f5f5;
-            border: 1px solid #ccc;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
-        .tabs button.active {
-            background-color: #5b1f32;
-            color: white;
-            border: none;
-        }
-        .results-container {
-            background-color: white;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-        .results-container h2 {
-            color: #5b1f32;
-        }
-
-        /* Glosario Styling */
-        .glosario {
-            background-color: white;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin-top: 20px;
+            top: 0px !important;
         }
     </style>
 </head>
 <body>
 
-    <!-- Top Header -->
-    <div class="top-header">
-        <div>
-            <img src="IMG_1350.jpeg" alt="Gobierno de México Logo">
-        </div>
-        <div class="menu">
-            <a href="#">Trámites</a>
-            <a href="#">Gobierno</a>
-            <a href="#">🔍</a>
-        </div>
+    <header>
+        <div>Gobierno del Estado de Baja California</div>
+    </header>
+    
+<!-- Google Translate Widget -->
+<div id="google_translate_element"></div>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({pageLanguage: 'es'}, 'google_translate_element');
+}
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>    
+
+    <!-- Logos at the top in a white section -->
+    <div class="logo-section">
+        <img src="IMG_0851.png" alt="Gobierno del Estado de Baja California">
     </div>
 
-    <!-- Sub Header -->
-    <div class="sub-header">
-        <div class="nav-links">
-            <a href="#">Inicio</a>
-            <a href="#">Búsqueda</a>
-            <a href="#">Preguntas frecuentes</a>
-            <a href="#">Video de ayuda</a>
-            <a href="#">Contacto</a>
-        </div>
+    <!-- Google Translate Widget -->
+    <div id="google_translate_element"></div>
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'es'}, 'google_translate_element');
+    }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!-- Main container for the certification information -->
+    <div class="container">
+        <h1>Certificado de Enfermero Psiquiátrico</h1>
+@@ -149,8 +158,5 @@ <h2 class="ordinance">Ordenanzas Estatales y Municipales</h2>
+        <img src="IMG_0850.png" alt="COFEPRIS">
     </div>
 
-    <!-- Main Content -->
-    <main>
-        <h1>Registro Nacional de Profesionistas</h1>
-        <h2>Consulta de cédulas profesionales</h2>
-        <p>Este apartado tiene como propósito ampliar los criterios de búsqueda de profesionistas que registran sus títulos y cuentan con cédula profesional con efectos de patente; esto delimita la responsabilidad del Registro Nacional de Profesionistas, al definirla como la única instancia válida para hacer uso de esta información.</p>
-        <p>La información publicada en este sitio, de acuerdo a los criterios ordenados por el Instituto Nacional de Transparencia Acceso a la Información y Protección de Datos Personales (INAI), es de carácter público y constantemente se actualiza; esto determina que la Secretaría de Educación Pública (SEP) se deslinde y no sea responsable del uso, adecuaciones y modalidades de la información que pudieran aparecer en otros sitios web.</p>
-
-        <!-- Tabs -->
-        <div class="tabs">
-            <button class="active">Búsqueda</button>
-            <button>Resultados</button>
-            <button>Detalle</button>
-        </div>
-
-        <!-- Results Container -->
-        <div class="results-container">
-            <h2>Detalle del registro</h2>
-            <p><strong>Número de Cédula:</strong> 12171365</p>
-            <p><strong>Nombre:</strong> TYLER ROBERT LÓPEZ PÉREZ</p>
-            <p><strong>Género:</strong> HOMBRE</p>
-            <p><strong>Profesión:</strong> ESPECIALIDAD EN PSIQUIATRÍA Y MEDICINA PALIATIVA</p>
-            <p><strong>Año de expedición:</strong> 2020</p>
-            <p><strong>Institución:</strong> UNIVERSIDAD AUTÓNOMA DE BAJA CALIFORNIA (UABC)</p>
-            <p><strong>Tipo:</strong> C1</p>
-            <p><a href="#">Solicitud de corrección de datos</a></p>
-        </div>
-
-        <!-- Glosario -->
-        <div class="glosario">
-            <h2>* Glosario de Nomenclaturas</h2>
-            <p><strong>AE:</strong> Autorización de Especialidad</p>
-            <p><strong>AEIE:</strong> Autorización de Especialidad por Institución Educativa</p>
-            <p><strong>AECEM:</strong> Autorización de Especialidad por Consejo de Especialidades Médicas</p>
-            <p><strong>AESSA:</strong> Autorización de Especialidad por Sector Salud</p>
-        </div>
-    </main>
-
+    <!-- Translate to English link -->
+    <p><a href="https://translate.google.com/translate?hl=en&sl=es&u=https%3A%2F%2Fwww.saludbccedula.work.gd" target="_blank">Translate this website to English</a></p>
 </body>
 </html>
